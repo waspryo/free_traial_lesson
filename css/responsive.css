@@ -1,0 +1,370 @@
+/*===================================
+        Bootstrap 3 Media Queries
+===================================*/
+/* Large Devices (Desltops $ laptops) */
+@media (min-width: 1300px) and (max-width: 1450px) {
+  
+  /* Header */
+  .contentArea-head h3 {
+    padding: 24px 42px 26px 53px;
+    bottom: 73px;
+    font-size: 20px;
+  }
+
+  /* Portfolio */
+  #portfolio {
+    padding-bottom: 0px;
+  } 
+  /* Footer */
+  footer img {
+    left: 130px;
+  }
+
+  footer small {
+    left: 130px;
+    position: relative;
+  }
+
+  .clearfix {
+    right: 130px;
+    position: relative;
+  }
+  
+}
+
+@media (min-width: 1200px) and (max-width: 1299px) {
+
+  /* Header */
+  .contentArea-head h3 {
+    padding: 24px 42px 26px 53px;
+    bottom: 73px;
+    font-size: 20px;
+  }
+  
+  /* Portfolio */
+  #portfolio {
+    padding-bottom: 0px; 
+  }
+
+  /* Isotope-filtters */
+  #isotope-filters {
+    padding: 20px 25px 20px 25px;
+  }
+
+  .portfolio-item-details h3 {
+    font-size: 25px;
+  }
+
+  /* Footer */
+
+  footer img {
+    padding-left: 18px;
+  }
+
+  footer small {
+    padding-left: 18px;
+  }
+
+  .clearfix {
+    padding-right: 20px;
+  }
+
+}
+
+/*  Medium Device (Landscape Tables & Medium Desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+  /* Filter btn */
+
+  .contentArea-head h3 {
+    padding: 24px 42px 26px 53px;
+    bottom: 73px;
+    font-size: 20px;
+  }
+
+  .portfolio-item-details p {
+    font-size: 14px;
+  }
+
+  .btn-danger {
+    margin-top: 10px;
+    font-size: 5px;
+  }
+
+  /* Portfolio */
+  #portfolio {
+    padding-bottom: 0px; 
+  }
+
+  /* Item overlay */
+  .portfolio-item-details span {
+    margin: 9px auto 5px auto;
+  }
+
+  .portfolio-item-details h3 {
+    font-size: 23px;
+    padding-top: 10px;
+  }
+
+  /* Footer */
+  footer img {
+    top: 28px;
+    left: 130px;
+  }
+
+  footer small {
+    top: 30px;
+    position: relative;
+    left: 130px;
+  }
+
+  .clearfix {
+    top: 39px;
+    position: relative;
+    right: 130px;
+  }
+
+  #toTopScroll.on {
+    right: 30px;
+  }
+
+}
+
+/*  Small Device (Portrait Tables & Small Desktops) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /* Header */
+  header {
+    height: 50px;
+  }
+
+  header img {
+    width: auto;
+    height: 20px;
+    bottom: 13px;
+  }
+
+  #heading-portfolio h1 {
+    font-size: 20px;
+  }
+
+  #heading-portfolio h2 {
+    font-size: 28px;
+  }
+
+  .contentArea-head h3 {
+    padding: 20px 42px 15px 53px;
+    bottom: 73px;
+    font-size: 15px;
+  }
+  
+  /* Portfolio */
+  #portfolio {
+    padding-bottom: 0px; 
+  }
+
+  .clearfix {
+    top: 43px;
+    position: relative;
+  }
+
+  /* Footer */
+  footer img {
+    top: 43px;
+    position: relative;
+  }
+
+  footer small {
+    top: 42px;
+    position: relative;
+  }
+
+}
+
+/*  Extra Small Device (Landscape Phone & Portrait Tables) */
+@media (max-width: 767px) {
+
+  /* Header */
+  header img {
+    left: 15px;
+    height: 16px;
+    bottom: 12px;
+  }
+
+  header {
+    height: 50px;
+  }
+
+  .contentArea-head h3 {
+    padding: 20px 22px 18px 23px;
+  }
+
+  #toTopScroll {
+    width: 45px;
+    height: 45px;
+  }
+  
+}
+ 
+
+/*  Extra Small Device (portrait Phones &Smaller Devices) */
+@media (max-width: 480px) {
+  
+  #portfolio {
+    padding-bottom: 0;
+  }
+
+  #portfolio .vertical-heading {
+    margin-bottom: 25px;
+  }
+   /* Header */
+  header img {
+    left: 15px;
+    height: 16px;
+    bottom: 12px;
+  }
+
+  header {
+    height: 50px;
+  }
+
+  .contentArea-head h3 {
+    padding: 20px 22px 18px 23px;
+  }
+
+  /* Content-text */
+
+  #heading-portfolio h1 {
+    font-size: 22px;
+  }
+
+  .portfolio-item-details h3 {
+    font-size: 25px;
+  }
+
+  .btn-danger {
+    margin-top: 10px;
+  }
+
+  /* Filter */
+
+  #isotope-filters button {
+    padding-right: 0;
+  }
+
+  footer small {
+    position: relative;
+    top: 42px;
+    font-size: 5px;
+  }
+
+  .clearfix {
+    font-size: 6px;
+    top: 50px;
+    position: relative;
+  }
+
+  #toTopScroll {
+    width: 30px;
+    height: 30px;
+  }
+
+  #toTopScroll:after {
+    border-width: 0 10px 15px;
+  }
+
+  #toTopScroll.on {
+    right: 20px;
+  }
+
+  footer img {
+    height: 14px;
+    top: 44px;
+  }
+
+  /* Content-box */
+  .content-box-md {
+    padding: 80px 0 20px 0;
+    margin: 0 20px 0 20px;
+  }
+
+  .break:before {
+    content: "\A";
+		white-space: pre; /* ←あわせてこれを指定しないと改行しない場合があるらしい */
+  }
+
+}
+ 
+
+/*  Extra Small Device (portrait Phones &Smaller Devices) */
+@media screen and (max-width: 320px) {
+
+  /* Header img */
+  header img {
+    width: auto;
+    position: relative;
+    bottom: 12px;
+    left: 20px;
+    width: 90px;
+    height: 17px;
+  }
+
+  /* portfolio text */
+
+  #heading-portfolio h1 {
+    font-size: 18px;
+  }
+
+  #heading-portfolio h2 {
+    font-size: 22px;
+  }
+
+  /* Header ToCalendar */
+  .contentArea-head h3 {
+    padding: 20px 6px 16px 6px;
+    bottom: 73px;
+  }
+  .portfolio-item-details h3 {
+    font-size: 22px;
+  }
+
+  #isotope-filters {
+    padding: 20px 0 20px 0;
+  }
+
+  #isotope-filters button {
+    padding: 5px 5px 5px 5px;
+  }
+
+  #isotope-filters button {
+    padding: 5px 0 5px 5px;
+  }
+
+  /* Btn */
+  .btn {
+    font-size: 4px;
+    padding: 3px 6px;
+  }
+
+  .btn-danger {
+    margin-top: 6px;
+  }
+
+  .portfolio-item-details h3 {
+    font-size: 20px;
+  }
+
+  .portfolio-item-details p {
+  font-size:  13px;
+  }
+
+  .portfolio-item-details span {
+    margin: 0;
+  }
+
+  .clearfix {
+    top: 50px;
+  }
+
+}
