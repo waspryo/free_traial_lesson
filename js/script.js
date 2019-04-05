@@ -1,98 +1,12 @@
 /*===================================
-              preloader
-===================================*/
-$(window).on('load', function() { // make sure that whole site is loaded
-  $('#status').fadeOut();
-  $('#preloader').delay(350).fadeOut('slow');
-});
-
-// init Isotope
-var $grid = $('.grid').isotope({
-  // options
-});
-// filter items on button click
-$('.filter-button-group').on( 'click', 'button', function() {
-  var filterValue = $(this).attr('data-filter');
-  $grid.isotope({ filter: filterValue });
-});
-/*===================================
-              Portfolio
-===================================*/
-$(window).on('load', function () {
-  $("#isotope-container").isotope({
-  });
-  // filter items on button click
-  $('.filter-button-group').on('click', 'button', function(){
-    // get filter Value
-    var filterValue = $(this).attr('data-filter');
-    // filter portfolio
-    $("#isotope-container").isotope({
-        filter: filterValue
-
-    });
-    //active button
-    $('.filter-button-group').find('.active').removeClass('active');
-    $(this).addClass('active');
-  });
-});
-
-/*===================================
-              Magnifiler
-===================================*/
-$(function() {
-  $("#portfolio-wrapper").magnificPopup({
-    delegate: 'a', // child items selector, by clicking on it popup will open
-    type: 'image',
-    gallery: {
-      enabled: true
-    }
-  });
-});
-
-/*===================================
-           Navigation Bar
-===================================*/
-/* Show & Hide White Navigation */
-$(function() {
-
-  // show/hide nav on page load
-  showHideNav();
-
-  $(window).scroll(function() {
-
-    // show/hide nav on window's scroll
-    showHideNav();
-  });
-
-  function showHideNav() {
-    if ($(window).scrollTop() > 0) {
-
-      //Show back to top botton
-      $("#toTopScroll").fadeIn();
-    } else {
-
-      //Hide back to top botton
-      $("#toTopScroll").fadeOut();
-    }
-  }
-});
-
-// Smooth Scrolling
-$(function() {
-  $("a.smooth-scroll").click(function(even) {
-    event.preventDefault();
-    // get section id like #about, #services, #work, #team and etc.
-    var section_id = $(this).attr("href");
-
-    $("html, body").animate({
-      scrollTop: $(section_id).offset().top - 64
-    }, 1250, "easeInOutExpo");
-  });
-});
-
-/*===================================
               Animation
 ===================================*/
+/* Pictures */
+$('.wrapper li').on('click', function(){
+  $('.wrapper li').toggleClass('plier');
+	$(this).toggleClass('active');
+});
+
 // animate on scroll
 $(function() {
   new WOW().init();
@@ -100,7 +14,17 @@ $(function() {
 
 // Home animation on page load
 $(window).on('load', function () {
-  $("#heading-portfolio").addClass("animated fadeInDown");
-  $("#isotope-filters").addClass("animated fadeInDown");
+  // Home
+  $("#home-heading-1").addClass("animated fadeInDown");
+  $("#home-heading-2").addClass("animated zoomIn");
+  $("#home-intro").addClass("animated zoomIn");
+  // Contents
+  $("#contents h1").addClass("animated slideInLeft");
+  $("#contents h2").addClass("animated slideInLeft");
+  $("#contents-1 h1").addClass("animated zoomIn");
+  $(".contents-1").addClass("animated slideInRight");
+  $(".team-member").addClass("animated slideInDown");
+  $(".top-sub-text").addClass("animated lideInsRight");
+  // Pictures
+  $("#pictures").addClass("animated fadeInDown");
 });
-
