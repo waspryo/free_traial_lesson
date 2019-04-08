@@ -175,6 +175,9 @@ header img {
   font-weight: 800;
   margin-top: 0; 
 }
+#contents h1 span {
+  color: #fd3c2f;
+}
 #contents h2,
 #content-1 h2,
 #content-2 h2 {
@@ -226,8 +229,12 @@ header img {
   font-size: 40px;
   font-weight: 800;
 }
+#contents-2 h1 span {
+  color: #fd3c2f;
+}
 #contents-2 p {
   padding: 20px 0 0 40px;
+  font-size: 18px;
 }
 /* Icons */
 #icons {
@@ -363,7 +370,7 @@ body {
   background-size:cover !important;
 }
 .wrapper li:nth-of-type(1) {
-  background: url(https://images.unsplash.com/photo-1485043433441-db091a258e5a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60) no-repeat center center;
+  background: url(https://images.unsplash.com/photo-1526234172573-67cabe4ebc80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60) no-repeat center center;
 }
 .wrapper li:nth-of-type(2) {
   background: url(https://images.unsplash.com/photo-1473081556163-2a17de81fc97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60) no-repeat center center;
@@ -396,6 +403,11 @@ body {
 }
 #pictures h1 {
   color: #000;
+  padding-bottom: 30px; 
+  font-family: "Heebo", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 3px;
 }
 /*===================================
              Footer
@@ -414,14 +426,6 @@ footer p span {
 /*===================================
              Animation
 ===================================*/
-#home-heading-1,
-#home-heading-2,
-#home-text,
-#home-btn,
-#arrow-down i {
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-}
 #home-heading-1 {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
